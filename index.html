@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Registration Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/99d012dce5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <nav id="navbar">
+        <h1 class="navbar__logo">logo</h1>
+
+        <ul class="navbar__list">
+          <li tabindex="1" class="navbar__listItem otherPages">home</li>
+          <li tabindex="1" class="navbar__listItem otherPages">about us</li>
+          <li tabindex="1" class="navbar__listItem otherPages">contact us</li>
+          <li tabindex="1" class="navbar__listItem" id="goToLogin">login</li>
+        </ul>
+      </nav>
+
+      <i class="fa-solid fa-bars" id="menu"></i>
+
+      <form id="log">
+        <h2 class="log__logText" id="logText">Login</h2>
+
+        <div class="log__inputDiv" id="fullname">
+          <input type="text" class="log__input" placeholder="fullname" />
+          <i class="fa-solid fa-circle-user log__inputIcon"></i>
+        </div>
+        <div class="log__inputDiv">
+          <input type="text" class="log__input" placeholder="username" />
+          <i class="fa-solid fa-user log__inputIcon"></i>
+        </div>
+        <div class="log__inputDiv" id="email">
+          <input type="email" class="log__input" placeholder="email" />
+          <i class="fa-solid fa-envelope log__inputIcon"></i>
+        </div>
+        <div class="log__inputDiv">
+          <input type="password" class="log__input" placeholder="password" />
+          <i class="fa-solid fa-eye log__inputIcon log__inputPasswordIcon"></i>
+        </div>
+        <div class="log__inputDiv" id="passConf">
+          <input
+            type="password"
+            class="log__input"
+            placeholder="password confirmation"
+          />
+          <i class="fa-solid fa-eye log__inputIcon log__inputPasswordIcon"></i>
+        </div>
+
+        <button type="submit" class="log__btn">
+          <span id="submitBtnText">Sign in</span>
+        </button>
+
+        <section class="log__actions" id="actions">
+          <div>
+            <input type="checkbox" id="theCheckbox" />
+            <label for="theCheckbox"></label>
+            <span>remember me</span>
+          </div>
+          <button type="button">forgot password?</button>
+        </section>
+
+        <section class="log__otherLogMethods">
+          <h2 id="otherLogMethodsText">— or sign in with —</h2>
+          <div>
+            <button type="button">google</button>
+            <button type="button">facebook</button>
+          </div>
+        </section>
+
+        <section class="log__accounts">
+          <p id="haveAccount">Don't have an account?</p>
+          <p id="toggleForms">create an account!</p>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
